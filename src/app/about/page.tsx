@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Cards from "@/components/Cards";
 import Footer from "@/components/Footer";
