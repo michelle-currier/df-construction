@@ -1,6 +1,7 @@
 # Small Business Site App Template
 
 This is a template that can be used for small businesses to deploy a site very quickly.
+
 This template is best serviced by small businesses who want to work with someone to manage their
 website presence, but do not want to use a WYSIWYG site-builder
 
