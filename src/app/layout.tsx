@@ -1,21 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Raleway } from "@next/font/google";
+// import { Roboto } from "@next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const raleway = Raleway({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  // display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'Small Business Promotion',
-  description: 'Landing page for promoting a small business',
+  title: "Small Business Promotion",
+  description: "Landing page for promoting a small business",
 };
 
 export default function RootLayout({
@@ -26,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={raleway.className}
+        // className="{raleway.className}"
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
