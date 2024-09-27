@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-// import Cards from "@/components/Cards";
+import Cards from "@/components/Cards";
 import Footer from "@/components/Footer";
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
     <div className="bg-gray-800 text-white flex flex-col">
       <div className="justify-start items-center p-6">
         <h2 className="text-4xl font-bold">About</h2>
-        {/* <Cards /> */}
+        <Cards />
         <p>the cards broke it!</p>
         <p>
           <a
