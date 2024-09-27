@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import image1 from "./../images/bulkhead.png";
-import image2 from "./../images/bulkheadAfter.png";
+import image2 from "./../images/bulkhead_after.png";
 import image3 from "./../images/demo2.jpg";
 import image4 from "./../images/drainageDemo.jpg";
 import image5 from "./../images/pilingsDrivin.jpg";
