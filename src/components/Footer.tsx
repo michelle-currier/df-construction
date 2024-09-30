@@ -17,6 +17,16 @@ const Footer = () => (
             </a>
           </li>
           <li>
+            Framework with&nbsp;
+            <a
+              href="https://nextjs.org/"
+              target="_blank"
+              className="text-teal-300 border-teal-300 border-b"
+            >
+              NextJS
+            </a>
+          </li>
+          <li>
             Using styles from&nbsp;
             <a
               href="https://tailwind.build/classes"
@@ -24,6 +34,16 @@ const Footer = () => (
               className="text-teal-300 border-teal-300 border-b"
             >
               Tailwind
+            </a>
+          </li>
+          <li>
+            Transitions with&nbsp;
+            <a
+              href="https://hover.dev"
+              target="_blank"
+              className="text-teal-300 border-teal-300 border-b"
+            >
+              Hover.dev
             </a>
           </li>
           <li>

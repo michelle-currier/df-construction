@@ -2,7 +2,6 @@
 
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Cards from "@/components/Cards";
-import Footer from "@/components/Footer";
 
 export default function About() {
   return (
@@ -21,7 +20,6 @@ export default function About() {
           </a>
         </p>
       </div>
-      <Footer />
     </div>
   );
 }

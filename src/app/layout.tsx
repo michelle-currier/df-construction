@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Raleway } from "@next/font/google";
 // import { Roboto } from "@next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const raleway = Raleway({
   weight: ["400", "700"],
@@ -21,13 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={raleway.className}>
       <body
-        className={raleway.className}
+        className="h-full flex bg-gray-800 flex-col"
         // className="{raleway.className}"
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <main className="text-white flex flex-col justify-center items-center">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
