@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { TransitionLink } from "@/components/utils/TransitionLink";
 
 export default function Hero() {
   return (
@@ -10,21 +11,15 @@ export default function Hero() {
           We help you achieve your goals with our services.
         </p>
 
-        <a
-          href="/contact"
-          className="mt-8 bg-white text-blue-600 font-semibold py-2 px-4 rounded-full inline-flex items-center"
-        >
-          Get in Touch
+        <button className="mt-8 bg-white text-blue-600 font-semibold py-2 px-4 rounded-full inline-flex items-center">
+          <TransitionLink href="/contact">Get in Touch</TransitionLink>
           <ArrowRightIcon className="w-5 h-5 ml-2" />
-        </a>
+        </button>
 
-        <a
-          href="/about"
-          className="mt-8 bg-white text-blue-600 font-semibold mx-4 py-2 px-4 rounded-full inline-flex items-center"
-        >
-          about
+        <button className="mt-8 ml-8 bg-white text-blue-600 font-semibold py-2 px-4 rounded-full inline-flex items-center">
+          <TransitionLink href="/contact">About</TransitionLink>
           <ArrowRightIcon className="w-5 h-5 ml-2" />
-        </a>
+        </button>
       </section>
     </div>
   );
