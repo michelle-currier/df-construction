@@ -1,5 +1,5 @@
 "use client";
-
+import { teko } from "@/app/utils/fonts";
 import { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { TransitionBackButton } from "@/components/utils/TransitionBackButton";
@@ -70,7 +70,9 @@ export default function Contact() {
   // };
   return (
     <section className="max-w-3xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center text-black dark:text-white mb-8">
+      <h1
+        className={` ${teko} text-3xl font-bold text-center text-black dark:text-white mb-8`}
+      >
         Contact Us
       </h1>
       <form onSubmit={handleSubmit} className="space-y-6">

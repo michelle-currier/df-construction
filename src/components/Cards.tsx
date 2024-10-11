@@ -1,4 +1,5 @@
 // import React from "react";
+import { teko } from "@/app/utils/fonts";
 import Image from "next/image";
 
 import image1 from "./../images/bulkhead.png";
@@ -57,7 +58,9 @@ export default function ActionAreaCard() {
               className="w-full h-40 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-2xl text-teal-600 font-semibold mb-2">
+              <h3
+                className={` ${teko} text-2xl text-teal-600 font-semibold mb-2`}
+              >
                 {item.name}
               </h3>
               <p className="text-gray-600">{item.desc}</p>

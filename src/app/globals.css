@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
 :root {
   --background: #ffffff;
@@ -21,7 +23,6 @@ body {
   transition-property: opacity, background, transform, filter;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
-  overflow-x: hidden;
 }
 
 .page-transition {
@@ -30,26 +31,15 @@ body {
   transform: translateY(100px);
   filter: blur(16px);
 }
-.page-transition-right {
-  opacity: 0;
-  background: #000;
-  transform: translateX(100px);
-  filter: blur(16px);
-  
-}
-.page-transition-left {
-  opacity: 0;
-  background: #000;
-  transform: translateX(-100px);
-  filter: blur(16px);
-  
-}
 @layer base {
-  html {
+  /* html {
     font-family: "Raleway", sans-serif;
-  }
-}
+  } */
 
+}
+/* html h1 {
+  font-family: "Teko",  sans-serif;
+} */
 
 @layer utilities {
   .text-balance {

@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Raleway } from "@next/font/google";
-// import { Roboto } from "@next/font/google";
+import { raleway } from "@/app/utils/fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const raleway = Raleway({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  // display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Small Business Promotion",
@@ -23,10 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={raleway.className}>
+    // <html lang="en" className={raleway.className}>
+    <html lang="en">
       <body
-        className="h-full flex bg-gray-800 flex-col"
-        // className="{raleway.className}"
+        className={` ${raleway} h-full flex bg-gray-800 flex-col`}
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />

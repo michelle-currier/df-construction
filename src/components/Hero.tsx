@@ -1,10 +1,11 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { TransitionButton } from "@/components/utils/TransitionButton";
+import { teko } from "@/app/utils/fonts";
 export default function Hero() {
   return (
     <div className="flex flex-col mb-6">
       <section className="max-w-3xl mx-auto p-6">
-        <h1 className="text-5xl font-bold">
+        <h1 className={` ${teko} text-5xl font-bold`}>
           Welcome to DF Construction Services
         </h1>
         <h2 className="text-3xl font-bold my-10"></h2>
