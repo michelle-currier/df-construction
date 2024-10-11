@@ -8,7 +8,7 @@ const ralewayFont = Raleway({
     display: "swap",
   });
   const tekoFont = Teko({
-    weight: ["700"],
+    weight: ["500"],
     style: ["normal"],
     subsets: ["latin"],
     display: "swap",

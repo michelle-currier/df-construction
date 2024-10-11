@@ -1,12 +1,13 @@
 // import Link from "next/link";
 import { TransitionLink } from "@/components/utils/TransitionLink";
+import { teko } from "@/app/utils/fonts";
 
 export default function Navbar() {
   return (
     <div className="flex flex-row justify-between w-full">
       <div className="p-6">logo</div>
       <nav className="flex justify-end">
-        <ul className="flex space-x-4 m-6">
+        <ul className={` ${teko} flex space-x-8 m-6`}>
           <li>
             <TransitionLink href="/">Home</TransitionLink>
           </li>
