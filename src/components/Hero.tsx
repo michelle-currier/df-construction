@@ -1,5 +1,4 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import { TransitionLink } from "@/components/utils/TransitionLink";
 import { TransitionButton } from "@/components/utils/TransitionButton";
 export default function Hero() {
   return (
