@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-
+import { TransitionBackButton } from "@/components/utils/TransitionBackButton";
 // Define the shape of form data
 interface FormData {
   name: string;
@@ -171,13 +171,12 @@ export default function Contact() {
           </a>
         </p>
         <p>
-          <a
-            href="/"
-            className="mt-8 bg-white text-teal-600 font-semibold py-2 px-4 rounded-full inline-flex items-center"
-          >
-            Back to home
-            <ArrowLeftIcon className="w-5 h-5 ml-2" />
-          </a>
+          <TransitionBackButton href="/">
+            <button className="mt-8 bg-white text-teal-600 font-semibold py-2 px-4 rounded-full inline-flex items-center">
+              Back to home
+              <ArrowLeftIcon className="w-5 h-5 ml-2" />
+            </button>
+          </TransitionBackButton>
         </p>
       </div>
     </section>

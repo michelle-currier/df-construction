@@ -13,7 +13,7 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export const TransitionButton = ({
+export const TransitionBackButton = ({
   children,
   href,
   ...props
@@ -26,14 +26,14 @@ export const TransitionButton = ({
     e.preventDefault();
     // todo run a animation
     const body = document.querySelector("body");
-    body?.classList.add("page-transition-right");
+    body?.classList.add("page-transition-left");
 
     // sleep
     await sleep(500);
     router.push(href);
     // enter animation
     await sleep(300);
-    body?.classList.remove("page-transition-right");
+    body?.classList.remove("page-transition-left");
   };
 
   return (

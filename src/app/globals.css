@@ -21,6 +21,7 @@ body {
   transition-property: opacity, background, transform, filter;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
+  overflow-x: hidden;
 }
 
 .page-transition {
@@ -28,6 +29,20 @@ body {
   background: #000;
   transform: translateY(100px);
   filter: blur(16px);
+}
+.page-transition-right {
+  opacity: 0;
+  background: #000;
+  transform: translateX(100px);
+  filter: blur(16px);
+  
+}
+.page-transition-left {
+  opacity: 0;
+  background: #000;
+  transform: translateX(-100px);
+  filter: blur(16px);
+  
 }
 @layer base {
   html {

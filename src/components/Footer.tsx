@@ -16,7 +16,7 @@ const Footer = () => (
               m.currier designs
             </a>
           </li>
-          <li>
+          {/* <li>
             Framework with&nbsp;
             <a
               href="https://nextjs.org/"
@@ -55,7 +55,7 @@ const Footer = () => (
             >
               Vercel app
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="w-1/2 text-right">

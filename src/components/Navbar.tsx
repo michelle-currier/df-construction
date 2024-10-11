@@ -11,7 +11,7 @@ export default function Navbar() {
             <TransitionLink href="/">Home</TransitionLink>
           </li>
           <li>
-            <TransitionLink href="/about">About</TransitionLink>
+            <TransitionLink href="/about">Services</TransitionLink>
           </li>
           <li>
             <TransitionLink href="/contact">Contact</TransitionLink>
