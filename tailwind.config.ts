@@ -12,6 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionProperty: {
+        // Add any properties you want to transition globally
+        'button': 'background-gradient',
+      },
+      transitionDuration: {
+        'button': '500ms', // Customize duration for buttons
+      },
+      transitionTimingFunction: {
+        'button': 'ease-in-out', // Customize easing for buttons
+      },
     },
   },
   plugins: [],
