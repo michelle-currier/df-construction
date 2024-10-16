@@ -4,7 +4,7 @@ import { teko } from "@/app/utils/fonts";
 
 export default function Navbar() {
   return (
-    <div className="flex flex-row justify-between w-full">
+    <div className="flex mx-auto justify-between max-w-7xl w-full">
       <div className="p-6">logo</div>
       <nav className="flex justify-end">
         <ul className={` ${teko} flex space-x-8 m-6`}>

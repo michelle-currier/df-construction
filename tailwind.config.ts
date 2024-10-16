@@ -1,4 +1,8 @@
 import type { Config } from "tailwindcss";
+import Image from "next/image";
+
+
+import imageHero from "src/images/hero-image.jpg";
 
 const config: Config = {
   content: [
@@ -11,6 +15,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      dropShadow: {
+        'sm': '0 1px 2px rgba(0, 0, 0, 0.75)',
       },
       transitionProperty: {
         // Add any properties you want to transition globally

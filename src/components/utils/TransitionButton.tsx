@@ -26,14 +26,14 @@ export const TransitionButton = ({
     e.preventDefault();
     // todo run a animation
     const body = document.querySelector("body");
-    body?.classList.add("page-transition-right");
+    body?.classList.add("page-transition");
 
     // sleep
     await sleep(500);
     router.push(href);
     // enter animation
     await sleep(300);
-    body?.classList.remove("page-transition-right");
+    body?.classList.remove("page-transition");
   };
 
   return (

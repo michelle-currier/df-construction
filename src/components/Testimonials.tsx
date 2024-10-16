@@ -20,20 +20,20 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <>
-    <hr className="border-teal-700 my-6 mx-auto w-full" />
-    <h4 className="text-4xl font-bold text-center mb-8">Testimonials</h4>
+  <div className="mx-auto max-w-7xl w-full mb-12">
+    <h4 className="text-4xl font-bold text-center my-8">Testimonials</h4>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
       {testimonials.map((item, index) => (
-        <div key={index} className="bg-white shadow-lg rounded-lg p-6">
-          <h3 className="text-xl font-semibold mb-2 text-teal-800">
+        <div key={index} className="bg-white shadow-lg rounded-lg pt-6 pb-4">
+          <h3 className="text-xl font-semibold mb-2 text-teal-800 px-6">
             {item.name} - <i>{item.role}</i>
           </h3>
-          <p className="text-gray-700">{item.testimonial}</p>
+          <hr className="border-teal-700 mt-6 mx-auto w-full" />
+          <p className="text-gray-700 p-6">{item.testimonial}</p>
         </div>
       ))}
     </div>
-  </>
+  </div>
 );
 
 export default Testimonials;
