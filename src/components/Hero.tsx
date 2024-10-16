@@ -4,9 +4,9 @@ import { teko } from "@/app/utils/fonts";
 
 export default function Hero() {
   return (
-    <section className="bg-[url('./../images/hero-image.jpg')] bg-cover w-full">
+    <section className="bg-[url('./../images/hero-image.jpg')] bg-cover w-full mb-8">
       <hr className="border-teal-700 pb-6 mx-auto w-full" />
-      <div className="max-w-5xl mx-auto py-12 px-6 flex flex-col">
+      <div className="max-w-5xl mx-auto p-12 flex flex-col">
         <h1 className={` ${teko} text-5xl font-bold drop-shadow-sm`}>
           Welcome to DF Construction Services
         </h1>
@@ -39,7 +39,7 @@ export default function Hero() {
           efficiently and to the highest standards.
         </p>
       </div>
-      <hr className="border-teal-700 mt-6 mx-auto w-full" />
+      <hr className="border-teal-700 mt-8 mx-auto w-full" />
     </section>
   );
 }
