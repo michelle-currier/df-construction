@@ -5,8 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Small Business Promotion",
-  description: "Landing page for promoting a small business",
+  title: "DF Construction Services",
+  description:
+    "With over 20 years of experience, DF Construction Services is your trusted partner for all heavy construction needs in both commercial and residental sectors. As a licensed contractor, we specialize in delivering top-notch services that lay the foundation for successful projects in the greater New Orleans area.",
 };
 
 export default function RootLayout({

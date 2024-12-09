@@ -10,7 +10,9 @@ export default function Hero() {
         <h1 className={` ${teko} text-5xl font-bold drop-shadow-sm`}>
           Welcome to DF Construction Services
         </h1>
-        <h2 className="text-3xl font-bold my-4">Some tagline here...</h2>
+        <h2 className="text-3xl font-bold my-4 text-teal-400">
+          Building Strong Foundations, Clearing New Paths.
+        </h2>
         <p className="my-4 text-lg drop-shadow-sm">
           With over 20 years of experience, DF Construction Services is your
           trusted partner for all heavy construction needs in both commercial
