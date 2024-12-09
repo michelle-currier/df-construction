@@ -16,9 +16,9 @@ export async function POST(req: NextRequest) {
 
     // Create the email options
     const emailData = {
-      to: "mcurrierdesigns@gmail.com", // Your email where you want to receive messages
-      from: "mcurrierdesigns@gmail.com", // Sender's email
-      subject: `Contact inquiry from ${name}`,
+      to: "donald.fernandez1@gmail.com", // Your email where you want to receive messages
+      from: "donald.fernandez1@gmail.com", // Sender's email
+      subject: `DF Construction has an inquiry from ${name}`,
       text: message,
       html: `
         <p><strong>You have a new message from your website contact form at ${siteName}.</strong></p>
