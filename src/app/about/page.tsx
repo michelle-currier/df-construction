@@ -1,8 +1,6 @@
 "use client";
 import { teko } from "@/app/utils/fonts";
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Cards from "@/components/Cards";
-import { TransitionButton } from "@/components/utils/TransitionButton";
 
 export default function About() {
   return (

@@ -1,8 +1,7 @@
 "use client";
 import { teko } from "@/app/utils/fonts";
 import { useState } from "react";
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import { TransitionButton } from "@/components/utils/TransitionButton";
+
 // Define the shape of form data
 interface FormData {
   name: string;
