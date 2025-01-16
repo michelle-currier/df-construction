@@ -2,12 +2,12 @@
 import { teko } from "@/app/utils/fonts";
 import Image from "next/image";
 
-import image1 from "./../images/bulkhead.png";
-import image2 from "./../images/bulkhead_after.png";
-import image3 from "./../images/demo2.jpg";
-import image4 from "./../images/drainageDemo.jpg";
-import image5 from "./../images/pilingsDrivin.jpg";
-import image6 from "./../images/fence.jpg";
+import image1 from "./../images/demolish.jpg";
+import image2 from "./../images/excavation.jpg";
+import image3 from "./../images/landclear.jpg";
+import image4 from "./../images/bulkhead.jpg";
+import image5 from "./../images/drainageDemo.jpg";
+import image6 from "./../images/pilingsDrivin.jpg";
 
 const services = [
   {
@@ -55,7 +55,7 @@ export default function ActionAreaCard() {
             <Image
               src={item.image}
               alt={item.name}
-              className="w-full h-40 object-cover"
+              className="w-full h-60 object-cover"
             />
             <div className="p-6">
               <h3
