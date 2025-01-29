@@ -10,7 +10,7 @@ const Footer = () => (
             <li>
               Built by{" "}
               <a
-                href="https://mcurrier.com"
+                href="https://design.mcurrier.com"
                 target="_blank"
                 className="text-teal-300 border-teal-300 border-b "
               >

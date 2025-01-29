@@ -8,11 +8,14 @@ export default function Navbar() {
   return (
     <div className="flex mx-auto justify-between max-w-7xl w-full">
       <div className="p-6">
-        <Image
-          src={logo}
-          alt="DF Construction Services logo"
-          className="w-full h-10 object-cover"
-        />
+        <TransitionLink href="/">
+          <Image
+            src={logo}
+            alt="DF Construction Services logo"
+            className="w-full h-10 object-cover"
+            loading="eager"
+          />
+        </TransitionLink>
       </div>
       <nav className="flex justify-end">
         <ul className={` ${teko} flex space-x-8 m-6`}>
