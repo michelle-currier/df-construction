@@ -4,14 +4,14 @@ import { useState } from "react";
 
 // Define the shape of form data
 interface FormData {
-  name: string;
+  fullname: string;
   email: string;
   phone: string;
   message: string;
 }
 export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
+    fullname: "",
     email: "",
     phone: "",
     message: "",
@@ -33,7 +33,7 @@ export default function Contact() {
 
       if (response.ok) {
         setStatus("Email sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "" });
+        setFormData({ fullname: "", email: "", phone: "", message: "" });
       } else {
         setStatus("Failed to send email. Please try again later.");
       }
@@ -53,20 +53,7 @@ export default function Contact() {
       [name]: value, // Dynamically update the state for the correct field
     });
   };
-  // const handleChange = (
-  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  // ) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({
-  //     ...formData,
-  //     [name]: value,
-  //   });
-  // };
   return (
     <section className="max-w-3xl mx-auto p-6">
       <h1
@@ -77,16 +64,16 @@ export default function Contact() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="flex flex-col">
           <label
-            htmlFor="name"
+            htmlFor="fullname"
             className="text-sm font-medium text-black dark:text-white"
           >
             Your Name
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="fullname"
+            name="fullname"
+            value={formData.fullname}
             onChange={handleChange}
             className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md dark:bg-black dark:text-white"
             required

@@ -38,7 +38,14 @@ button {
     @apply ring-2 ring-blue-500;
   }
 }
-
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
 }
 /* html h1 {
   font-family: "Teko",  sans-serif;
