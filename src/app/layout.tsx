@@ -19,14 +19,16 @@ export default function RootLayout({
     // <html lang="en" className={raleway.className}>
     <html lang="en">
       <body
-        className={` ${raleway} h-full flex bg-gradient-to-b from-slate-900 to-slate-600 flex-col`}
+        className={` ${raleway} h-full flex bg-gradient-to-b from-slate-900 to-slate-700 flex-col`}
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        <main className="text-white flex flex-col justify-center items-center w-full">
-          {children}
-        </main>
-        <Footer />
+        <div>
+          <Navbar />
+          <main className="text-white flex flex-col justify-center items-center w-full">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
