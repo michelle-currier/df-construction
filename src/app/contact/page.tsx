@@ -56,17 +56,12 @@ export default function Contact() {
 
   return (
     <section className="max-w-3xl mx-auto p-6">
-      <h1
-        className={` ${teko} text-3xl font-bold text-center text-black dark:text-white mb-8`}
-      >
+      <h1 className={` ${teko} text-3xl font-bold text-center text-white mb-8`}>
         Contact Us
       </h1>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="flex flex-col">
-          <label
-            htmlFor="fullname"
-            className="text-sm font-medium text-black dark:text-white"
-          >
+          <label htmlFor="fullname" className="text-sm font-medium text-white">
             Your Name
           </label>
           <input
@@ -75,15 +70,12 @@ export default function Contact() {
             name="fullname"
             value={formData.fullname}
             onChange={handleChange}
-            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md dark:bg-black dark:text-white"
+            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md bg-black text-white"
             required
           />
         </div>
         <div className="flex flex-col">
-          <label
-            htmlFor="email"
-            className="text-sm font-medium text-black dark:text-white"
-          >
+          <label htmlFor="email" className="text-sm font-medium text-white">
             Your Email
           </label>
           <input
@@ -92,15 +84,12 @@ export default function Contact() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md dark:bg-black dark:text-white"
+            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md bg-black text-white"
             required
           />
         </div>
         <div className="flex flex-col">
-          <label
-            htmlFor="phone"
-            className="text-sm font-medium text-black dark:text-white"
-          >
+          <label htmlFor="phone" className="text-sm font-medium text-white">
             Your Phone
           </label>
           <input
@@ -109,15 +98,12 @@ export default function Contact() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md dark:bg-black dark:text-white"
+            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md bg-black text-white"
             required
           />
         </div>
         <div className="flex flex-col">
-          <label
-            htmlFor="message"
-            className="text-sm font-medium text-black dark:text-white"
-          >
+          <label htmlFor="message" className="text-sm font-medium text-white">
             Your Message
           </label>
           <textarea
@@ -126,13 +112,13 @@ export default function Contact() {
             value={formData.message}
             onChange={handleChange}
             rows={5}
-            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md dark:bg-black dark:text-white"
+            className="mt-2 p-3 border border-gray-300 dark:border-zinc-700 rounded-md bg-black text-white"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-zinc-900 dark:bg-white text-white dark:text-black p-3 rounded-md font-bold hover:bg-zinc-700 dark:hover:bg-zinc-200 transition"
+          className="w-full bg-zinc-900 text-white  p-3 rounded-md font-bold hover:bg-zinc-700 transition"
         >
           Send Message
         </button>
@@ -149,11 +135,11 @@ export default function Contact() {
       )}
 
       <div className="mt-12 text-center">
-        <p className="text-sm text-black dark:text-white">
+        <p className="text-sm text-white">
           Or, send us an email directly at{" "}
           <a
             href="mailto:donald.fernandez1@gmail.com"
-            className="text-blue-600 dark:text-teal-300 underline"
+            className="text-teal-300 underline"
           >
             donald.fernandez1@gmail.com
           </a>
