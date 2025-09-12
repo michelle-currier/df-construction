@@ -22,9 +22,9 @@ export default function Navbar() {
           <li>
             <TransitionLink href="/">Home</TransitionLink>
           </li>
-          <li>
+          {/* <li>
             <TransitionLink href="/about">Services</TransitionLink>
-          </li>
+          </li> */}
           <li>
             <TransitionLink href="/contact">Contact</TransitionLink>
           </li>
